@@ -11,30 +11,40 @@
 <body>
 
     
-<table class="schedule">
+<table>
+    <caption>
+        What is the difference between block, inline and inline-block
+    </caption>
     <thead>
         <tr>
-            <th>Train number</th>
-            <th>Route</th>
-            <th>Travel time</th>
+            <th>/</th>
+            <th>block</th>
+            <th>inline</th>
+            <th>inline-block</th>
         </tr>
     </thead>
+    <tbody>
+        <tr>
+            <th>height determined</th>
+            <td colspan="3"> by height of content
+            </td>
+        </tr>
+        <tr>
+            <th>width determined</th>
+            <td>by width of parent element</td>
+            <td colspan="2">by width of content</td>
+        </tr>
+        <tr>
+            <th>Is it possible to set height and width</th>
+            <td>yes</td>
+            <td>no</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <th>How line wrapping works</th>
+            <td>always on a new line</td>
+            <td colspan="2">only when filling the width of the parent element</td>
 
-    <tbody class="schedule-body">
-        <tr>
-            <td>433</td>
-            <td>London - Paris</td>
-            <td>5 hours</td>
-        </tr>
-        <tr>
-            <td>701</td>
-            <td>New York - Chicago</td>
-            <td>7 hours</td>
-        </tr>
-        <tr>
-            <td>258</td>
-            <td>Oslo - Warsaw</td>
-            <td>4 hours</td>
         </tr>
     </tbody>
 </table>
